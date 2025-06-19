@@ -1,0 +1,17 @@
+﻿<Window x:Class="Currency.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Currency"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#f0f8ff">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Name="btnAddRates" Content="Добавить курс валют" Click="btnAddRates_Click"
+                    Width="200" Height="40" Background="#87cefa" FontWeight="Bold"/>
+            <Button Name="btnViewRates" Content="Посмотреть историю и график" Click="btnViewRates_Click"
+                    Width="200" Height="40" Background="#90ee90" FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,3292 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChartKit.SkiaSharpView</name>
+    </assembly>
+    <members>
+        <member name="T:ChartKit.SkiaSharpView.Axis">
+            <inheritdoc cref="T:ChartKit.Kernel.Sketches.ICartesianAxis" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.BoxSeries`1">
+            <summary>
+            Defines a box serries series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.BoxSeries`2">
+            <summary>
+            Defines a box serries series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.BoxSeries`3">
+            <summary>
+            Defines a box serries series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.CandlesticksSeries`1">
+            <summary>
+            Defines a candlesticks series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.CandlesticksSeries`2">
+            <summary>
+            Defines a candlesticks series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.CandlesticksSeries`3">
+            <summary>
+            Defines a candlesticks series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.ColumnSeries`1">
+            <summary>
+            Defines a column series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.ColumnSeries`2">
+            <summary>
+            Defines a column series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.ColumnSeries`3">
+            <summary>
+            Defines a column series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.DateTimeAxis">
+            <summary>
+            Defines a DateTime axis.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.DateTimeAxis.#ctor(System.TimeSpan,System.Func{System.DateTime,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.DateTimeAxis"/> class.
+            </summary>
+            <param name="unit">The unit of the axis (hours, days, months, years).</param>
+            <param name="formatter">The labels formatter.</param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Drawable">
+            <inheritdoc cref="T:ChartKit.Drawing.IDrawable`1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Drawable.Draw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <inheritdoc cref="M:ChartKit.Drawing.IDrawable`1.Draw(`0)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry">
+            <inheritdoc cref="T:ChartKit.Drawing.IArcGeometry`1" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry.CenterX">
+            <inheritdoc cref="P:ChartKit.Drawing.IArcGeometry`1.CenterX"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry.CenterY">
+            <inheritdoc cref="P:ChartKit.Drawing.IArcGeometry`1.CenterY"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry.Width">
+            <inheritdoc cref="P:ChartKit.Drawing.IArcGeometry`1.Width"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry.Height">
+            <inheritdoc cref="P:ChartKit.Drawing.IArcGeometry`1.Height"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry.StartAngle">
+            <inheritdoc cref="P:ChartKit.Drawing.IArcGeometry`1.StartAngle"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry.SweepAngle">
+            <inheritdoc cref="P:ChartKit.Drawing.IArcGeometry`1.SweepAngle"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.ArcGeometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry">
+            <summary>
+            Defines a box geometry.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry.Width">
+            <inheritdoc cref="P:ChartKit.Drawing.IBoxGeometry`1.Width" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry.Third">
+            <inheritdoc cref="P:ChartKit.Drawing.IBoxGeometry`1.Third" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry.First">
+            <inheritdoc cref="P:ChartKit.Drawing.IBoxGeometry`1.First" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry.Min">
+            <inheritdoc cref="P:ChartKit.Drawing.IBoxGeometry`1.Min" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry.Median">
+            <inheritdoc cref="P:ChartKit.Drawing.IBoxGeometry`1.Median" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.BoxGeometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry">
+            <summary>
+            Defines a candlestick geometry.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry.Width">
+            <inheritdoc cref="P:ChartKit.Drawing.IFinancialGeometry`1.Width" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry.Open">
+            <inheritdoc cref="P:ChartKit.Drawing.IFinancialGeometry`1.Open" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry.Close">
+            <inheritdoc cref="P:ChartKit.Drawing.IFinancialGeometry`1.Close" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry.Low">
+            <inheritdoc cref="P:ChartKit.Drawing.IFinancialGeometry`1.Low" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.CandlestickGeometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.CircleGeometry">
+            <summary>
+            Defines a circle geometry.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.CircleGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.CircleGeometry"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.CircleGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.ColoredRectangleGeometry">
+            <summary>
+            Defines a rectangle geometry with a specified color.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.ColoredRectangleGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.ColoredRectangleGeometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.ColoredRectangleGeometry.Color">
+            <inheritdoc cref="P:ChartKit.Drawing.ISolidColorGeometry`1.Color" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.ColoredRectangleGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.CubicBezierAreaGeometry">
+            <summary>
+            Defines an area drawn using cubic beziers.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.CubicBezierAreaGeometry.OnDrawSegment(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,ChartKit.Drawing.Segments.CubicBezierSegment)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnDrawSegment(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.CubicBezierAreaGeometry.OnOpen(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,ChartKit.Drawing.Segments.CubicBezierSegment)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnOpen(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.CubicBezierAreaGeometry.OnClose(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,ChartKit.Drawing.Segments.CubicBezierSegment)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnClose(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry">
+            <inheritdoc cref="T:ChartKit.Drawing.IDoughnutGeometry`1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.CenterX">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.CenterX" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.CenterY">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.CenterY" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.Width">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.Width" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.Height">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.Height" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.StartAngle">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.StartAngle" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.SweepAngle">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.SweepAngle" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.PushOut">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.PushOut" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.InnerRadius">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.InnerRadius" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.CornerRadius">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.CornerRadius" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.InvertedCornerRadius">
+            <inheritdoc cref="P:ChartKit.Drawing.IDoughnutGeometry`1.InvertedCornerRadius" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry">
+            <inheritdoc cref="T:ChartKit.Drawing.IGeometry`1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.X">
+            <inheritdoc cref="P:ChartKit.Drawing.IGeometry`1.X" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.Y">
+            <inheritdoc cref="P:ChartKit.Drawing.IGeometry`1.Y" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.TransformOrigin">
+            <inheritdoc cref="P:ChartKit.Drawing.IGeometry`1.TransformOrigin" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.TranslateTransform">
+            <inheritdoc cref="P:ChartKit.Drawing.IGeometry`1.TranslateTransform" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.RotateTransform">
+            <inheritdoc cref="P:ChartKit.Drawing.IGeometry`1.RotateTransform" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.ScaleTransform">
+            <inheritdoc cref="P:ChartKit.Drawing.IGeometry`1.ScaleTransform" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.SkewTransform">
+            <inheritdoc cref="P:ChartKit.Drawing.IGeometry`1.SkewTransform" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.Transform">
+            <summary>
+            Gets or sets the matrix transform.
+            </summary>
+            <value>
+            The transform.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.Opacity">
+            <inheritdoc cref="P:ChartKit.Drawing.IPaintable`1.Opacity" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.Stroke">
+            <inheritdoc cref="P:ChartKit.Drawing.IPaintable`1.Stroke" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.Fill">
+            <inheritdoc cref="P:ChartKit.Drawing.IPaintable`1.Fill" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.Parent">
+            <inheritdoc cref="P:ChartKit.Drawing.IGeometry`1.Parent"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.Draw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <summary>
+            Draws the geometry in the user interface.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <summary>
+            Called when the geometry is drawn.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="paint">The paint.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.Measure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Measures the geometry.
+            </summary>
+            <param name="drawableTask">The drawable task.</param>
+            <returns>the size of the geometry.</returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Called when the geometry is measured.
+            </summary>
+            <param name="paintTasks">The paint task.</param>
+            <returns>the size of the geometry</returns>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand">
+            <summary>
+            Defines a heat lane.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand.#ctor(System.String,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand"/> class.
+            </summary>
+            <param name="name">The name/</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand.PropertyChanged">
+            <summary>
+            Called when a property changes.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand.Name">
+            <summary>
+            Gets or sets the land name.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand.Value">
+            <inheritdoc cref="P:ChartKit.Geo.IWeigthedMapLand.Value"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.HeatLand.OnPropertyChanged(System.String)">
+            <summary>
+            Called when a property changes.
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.HeatPathShape">
+            <summary>
+            Defines a path geometry with a specified color.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.HeatPathShape.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.HeatPathShape"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.HeatPathShape.FillColor">
+            <summary>
+            Gets or sets the color of the fill.
+            </summary>
+            <value>
+            The color of the fill.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.HeatPathShape.Draw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.Draw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.HeatPathShape.CompleteTransition(System.String[])">
+            <inheritdoc cref="M:ChartKit.Drawing.IAnimatable.CompleteTransition(System.String[])" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry">
+            <inheritdoc cref="T:ChartKit.Drawing.IPathGeometry`2" />
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry._commands">
+            <summary>
+            The commands
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.FirstCommand">
+            <inheritdoc cref="P:ChartKit.Drawing.IPathGeometry`2.FirstCommand" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.LastCommand">
+            <inheritdoc cref="P:ChartKit.Drawing.IPathGeometry`2.LastCommand" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.CountCommands">
+            <inheritdoc cref="P:ChartKit.Drawing.IPathGeometry`2.CountCommands" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.IsClosed">
+            <inheritdoc cref="P:ChartKit.Drawing.IPathGeometry`2.IsClosed" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.Draw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.AddLast(ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathGeometry`2.AddLast(ChartKit.Drawing.IPathCommand{`1})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.AddFirst(ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathGeometry`2.AddFirst(ChartKit.Drawing.IPathCommand{`1})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.AddAfter(System.Collections.Generic.LinkedListNode{ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath}},ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathGeometry`2.AddAfter(System.Collections.Generic.LinkedListNode{ChartKit.Drawing.IPathCommand{`1}},ChartKit.Drawing.IPathCommand{`1})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.AddBefore(System.Collections.Generic.LinkedListNode{ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath}},ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathGeometry`2.AddBefore(System.Collections.Generic.LinkedListNode{ChartKit.Drawing.IPathCommand{`1}},ChartKit.Drawing.IPathCommand{`1})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.ContainsCommand(ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathGeometry`2.ContainsCommand(ChartKit.Drawing.IPathCommand{`1})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.RemoveCommand(ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathGeometry`2.RemoveCommand(ChartKit.Drawing.IPathCommand{`1})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.RemoveCommand(System.Collections.Generic.LinkedListNode{ChartKit.Drawing.IPathCommand{SkiaSharp.SKPath}})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathGeometry`2.RemoveCommand(System.Collections.Generic.LinkedListNode{ChartKit.Drawing.IPathCommand{`1}})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.ClearCommands">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathGeometry`2.ClearCommands" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.PathGeometry.CompleteTransition(System.String[])">
+            <inheritdoc cref="M:ChartKit.Drawing.IAnimatable.CompleteTransition(System.String[])" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry">
+            <inheritdoc cref="T:ChartKit.Drawing.ILabelGeometry`1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.VerticalAlign">
+            <summary>
+            Gets or sets the vertical align.
+            </summary>
+            <value>
+            The vertical align.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.HorizontalAlign">
+            <summary>
+            Gets or sets the horizontal align.
+            </summary>
+            <value>
+            The horizontal align.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.Text">
+            <inheritdoc cref="P:ChartKit.Drawing.ILabelGeometry`1.Text" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.TextSize">
+            <inheritdoc cref="P:ChartKit.Drawing.ILabelGeometry`1.TextSize" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.Background">
+            <inheritdoc cref="P:ChartKit.Drawing.ILabelGeometry`1.Background" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.Padding">
+            <inheritdoc cref="P:ChartKit.Drawing.ILabelGeometry`1.Padding" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.LineHeight">
+            <inheritdoc cref="P:ChartKit.Drawing.ILabelGeometry`1.LineHeight" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.MaxWidth">
+            <inheritdoc cref="P:ChartKit.Drawing.ILabelGeometry`1.MaxWidth" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.LineGeometry">
+            <inheritdoc cref="T:ChartKit.Drawing.ILineGeometry`1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.LineGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.LineGeometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LineGeometry.X1">
+            <inheritdoc cref="P:ChartKit.Drawing.ILineGeometry`1.X1" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.LineGeometry.Y1">
+            <inheritdoc cref="P:ChartKit.Drawing.ILineGeometry`1.Y1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.LineGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.LineGeometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.NeedleGeometry">
+            <inheritdoc cref="T:ChartKit.Drawing.INeedleGeometry`1"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.NeedleGeometry.Radius">
+            <inheritdoc cref="P:ChartKit.Drawing.INeedleGeometry`1.Radius"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.NeedleGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.NeedleGeometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.OvalGeometry">
+            <summary>
+            Defines an oval geometry.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.OvalGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.OvalGeometry"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.OvalGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.PopUpGeometry">
+            <summary>
+            Defines a pop-up geometry.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.PopUpGeometry.Wedge">
+            <summary>
+            Gets or sets the wedge size.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.PopUpGeometry.WedgeThickness">
+            <summary>
+            Gets or sets the wedge thickness, it controls the width of the wedge,
+            the value is normalized, where 1 means the <see cref="P:ChartKit.SkiaSharpView.Drawing.Geometries.PopUpGeometry.Wedge"/> size, default is 2.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.PopUpGeometry.BorderRadius">
+            <summary>
+            Gets or sets the border radius.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.PopUpGeometry.Placement">
+            <summary>
+            Gets or sets the placement.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.RectangleGeometry">
+            <summary>
+            Defines a rectangle geometry.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.RectangleGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.RectangleGeometry"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.RectangleGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.RoundedRectangleGeometry">
+            <summary>
+            Defines a rounded rectangle geometry.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.RoundedRectangleGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.RoundedRectangleGeometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.RoundedRectangleGeometry.BorderRadius">
+            <inheritdoc cref="P:ChartKit.Drawing.IRoundedGeometry`1.BorderRadius"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.RoundedRectangleGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry">
+            <inheritdoc cref="T:ChartKit.Drawing.ISizedGeometry`1" />
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry.widthProperty">
+            <summary>
+            The width
+            </summary>
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry.heightProperty">
+            <summary>
+            The height
+            </summary>
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry.matchDimensions">
+            <summary>
+            The match dimensions
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry.Width">
+            <inheritdoc cref="P:ChartKit.Drawing.ISizedGeometry`1.Width" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry.Height">
+            <inheritdoc cref="P:ChartKit.Drawing.ISizedGeometry`1.Height" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnMeasure(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.SquareGeometry">
+            <summary>
+            Defines a square geometry.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SquareGeometry.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SquareGeometry"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SquareGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.StepLineAreaGeometry">
+            <summary>
+            Defines an area drawin using bezier segments.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.StepLineAreaGeometry.OnDrawSegment(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,ChartKit.Drawing.Segments.StepLineSegment)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnDrawSegment(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.StepLineAreaGeometry.OnOpen(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,ChartKit.Drawing.Segments.StepLineSegment)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnOpen(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.StepLineAreaGeometry.OnClose(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,ChartKit.Drawing.Segments.StepLineSegment)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnClose(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry">
+            <summary>
+            Defines a geometry that is buil from a svg path.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SizedGeometry" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.#ctor">
+            <summary>
+            Inieializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.#ctor(SkiaSharp.SKPath)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry"/> class.
+            </summary>
+            <param name="svgPath">The SVG path.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.#ctor(System.Func{SkiaSharp.SKPath})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry"/> class,
+            when <see cref="P:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.Path"/> is null, The path will be obtained from the <paramref name="pathSource"/> function.
+            </summary>
+            <param name="pathSource">The path source.</param>
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.Cache">
+            <summary>
+            Svg paths are cached in this dictionary to prevent parsing multiple times the same path,
+            when you use the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry"/> class, keep in mind that the parsed paths are living in
+            memory, this has no secondary effects in most of the cases, but if you are parsing a lot of paths
+            (maybe over 500) then you must consider cleaning the cache when you no longer need a path.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.Path">
+            <summary>
+            Gets or sets the path.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.FitToSize">
+            <summary>
+            Gets or sets whether the path should be fitted to the size of the geometry.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.SVGPath">
+            <inheritdoc cref="P:ChartKit.Drawing.ISvgPath`1.SVGPath"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.SVGPathGeometry.DrawPath(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint,SkiaSharp.SKPath)">
+            <summary>
+            Draws the given path to the canvas.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="path">The path.</param>
+            <param name="paint">The paint</param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1">
+            <summary>
+            Defines an area geometry.
+            </summary>
+            <typeparam name="TSegment">The type of the segment.</typeparam>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.Commands">
+            <summary>
+            Gets the commands in the vector.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.ClosingMethod">
+            <inheritdoc cref="P:ChartKit.Drawing.IVectorGeometry`2.ClosingMethod" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.Pivot">
+            <inheritdoc cref="P:ChartKit.Drawing.IVectorGeometry`2.Pivot" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.CompleteTransition(System.String[])">
+            <inheritdoc cref="M:ChartKit.Drawing.IAnimatable.CompleteTransition(System.String[])" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.Draw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.Drawing.Geometries.Geometry.OnDraw(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPaint)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnOpen(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)">
+            <summary>
+            Called when the area begins the draw.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="path">The path.</param>
+            <param name="segment">The segment.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnClose(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)">
+            <summary>
+            Called to close the area.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="path">The path.</param>
+            <param name="segment">The segment.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Geometries.VectorGeometry`1.OnDrawSegment(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,SkiaSharp.SKPath,`0)">
+            <summary>
+            Called to draw the segment.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="path">The path.</param>
+            <param name="segment">The segment.</param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Segments.LineSegment">
+            <inheritdoc cref="T:ChartKit.Drawing.ILinePathSegment`1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Segments.LineSegment.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Segments.LineSegment"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Segments.LineSegment.X">
+            <inheritdoc cref="P:ChartKit.Drawing.ILinePathSegment`1.X" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Segments.LineSegment.Y">
+            <inheritdoc cref="P:ChartKit.Drawing.ILinePathSegment`1.Y" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Segments.LineSegment.Execute(SkiaSharp.SKPath,System.Int64,ChartKit.Drawing.Animatable)">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathCommand`1.Execute(`0,System.Int64,ChartKit.Drawing.Animatable)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Segments.MoveToPathCommand">
+            <inheritdoc cref="T:ChartKit.Drawing.IMoveToPathCommand`1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Segments.MoveToPathCommand.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.Segments.MoveToPathCommand"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Segments.MoveToPathCommand.X">
+            <inheritdoc cref="P:ChartKit.Drawing.IMoveToPathCommand`1.X" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Segments.MoveToPathCommand.Y">
+            <inheritdoc cref="P:ChartKit.Drawing.IMoveToPathCommand`1.Y" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Segments.MoveToPathCommand.Execute(SkiaSharp.SKPath,System.Int64,ChartKit.Drawing.Animatable)">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathCommand`1.Execute(`0,System.Int64,ChartKit.Drawing.Animatable)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.Segments.PathCommand">
+            <inheritdoc cref="T:ChartKit.Drawing.IPathCommand`1" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.Segments.PathCommand.Id">
+            <inheritdoc cref="P:ChartKit.Drawing.IPathCommand`1.Id" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.Segments.PathCommand.Execute(SkiaSharp.SKPath,System.Int64,ChartKit.Drawing.Animatable)">
+            <inheritdoc cref="M:ChartKit.Drawing.IPathCommand`1.Execute(`0,System.Int64,ChartKit.Drawing.Animatable)" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext">
+            <summary>
+            Defines a skia sharp drawing context.
+            </summary>
+            <seealso cref="T:ChartKit.Drawing.DrawingContext" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.#ctor(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},SkiaSharp.SKImageInfo,SkiaSharp.SKSurface,SkiaSharp.SKCanvas,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext"/> class.
+            </summary>
+            <param name="motionCanvas">The motion canvas.</param>
+            <param name="info">The information.</param>
+            <param name="surface">The surface.</param>
+            <param name="canvas">The canvas.</param>
+            <param name="clearOnBeginDraw">Indicates whether the canvas is cleared on frame draw.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.#ctor(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},SkiaSharp.SKImageInfo,SkiaSharp.SKSurface,SkiaSharp.SKCanvas,SkiaSharp.SKColor,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext"/> class.
+            </summary>
+            <param name="motionCanvas">The motion canvas.</param>
+            <param name="info">The information.</param>
+            <param name="surface">The surface.</param>
+            <param name="canvas">The canvas.</param>
+            <param name="background">The background.</param>
+            <param name="clearOnBeginDraw">Indicates whether the canvas is cleared on frame draw.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.MotionCanvas">
+            <summary>
+            Gets or sets the motion canvas.
+            </summary>
+            <value>
+            The motion canvas.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.Info">
+            <summary>
+            Gets or sets the information.
+            </summary>
+            <value>
+            The information.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.Surface">
+            <summary>
+            Gets or sets the surface.
+            </summary>
+            <value>
+            The surface.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.Canvas">
+            <summary>
+            Gets or sets the canvas.
+            </summary>
+            <value>
+            The canvas.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.PaintTask">
+            <summary>
+            Gets or sets the paint task.
+            </summary>
+            <value>
+            The paint task.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.Paint">
+            <summary>
+            Gets or sets the paint.
+            </summary>
+            <value>
+            The paint.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.Background">
+            <summary>
+            Gets or sets the background.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext.OnBeginDraw">
+            <inheritdoc cref="M:ChartKit.Drawing.DrawingContext.OnBeginDraw"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.DrawMarginFrame">
+            <summary>
+            Defines a visual frame in the draw margin of the chart.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.BaseGaugeItem`1.#ctor(ChartKit.Defaults.ObservableValue,System.Action{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Extensions.GaugeItem"/> class.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="builder">The builder.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Extensions.BaseGaugeItem`1.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Extensions.BaseGaugeItem`1.Builder">
+            <summary>
+            Gets or sets the series builder.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Extensions.BaseGaugeItem`1.IsFillSeriesBuilder">
+            <summary>
+            Gets a value indicating whether this instance is specific to the fill series.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Extensions.BaseGaugeItem`1.Background">
+            <summary>
+            Gets a constant value that represents the background series.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Extensions.GaugeGenerator">
+            <summary>
+            The gauge generator class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.GaugeGenerator.BuildSolidGauge(ChartKit.SkiaSharpView.Extensions.GaugeItem[])">
+            <summary>
+            Builds a solid Gauge, it generates a series collectio of
+            <see cref="T:ChartKit.SkiaSharpView.PieSeries`3"/>, these series
+            are ready to be plotted in a pie chart, and will render the gauge, this reuses all the power and
+            functionality of the <see cref="T:ChartKit.PieChart`1"/> class.
+            </summary>
+            <param name="items">The items.</param>
+            <returns>A series collection of pie seires.</returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.GaugeGenerator.BuildAngularGaugeSections(ChartKit.SkiaSharpView.Extensions.GaugeItem[])">
+            <summary>
+            Builds an angular Gauge, it generates a series collectio of
+            <see cref="T:ChartKit.SkiaSharpView.PieSeries`3"/>, these series
+            are ready to be plotted in a pie chart, and will render the gauge, this reuses all the power and
+            functionality of the <see cref="T:ChartKit.PieChart`1"/> class.
+            </summary>
+            <param name="items">The items.</param>
+            <returns>A series collection of pie seires.</returns>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Extensions.GaugeItem">
+            <summary>
+            Defines a gauge item.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.GaugeItem.#ctor(System.Double,System.Action{ChartKit.SkiaSharpView.PieSeries{ChartKit.Defaults.ObservableValue}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Extensions.GaugeItem"/> class.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="builder">The builder.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.GaugeItem.#ctor(ChartKit.Defaults.ObservableValue,System.Action{ChartKit.SkiaSharpView.PieSeries{ChartKit.Defaults.ObservableValue}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Extensions.GaugeItem"/> class.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="builder">The builder.</param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Extensions.GaugeOptions">
+            <summary>
+            Defines the gauge options.
+            </summary>
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Extensions.GaugeOptions.None">
+            <summary>
+            Not a gauge.
+            </summary>
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Extensions.GaugeOptions.Solid">
+            <summary>
+            A solid gauge.
+            </summary>
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Extensions.GaugeOptions.Angular">
+            <summary>
+            An angular gauge.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Extensions.PieChartExtensions">
+            <summary>
+            Defines the pie chart esxtensions.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.PieChartExtensions.AsPieSeries``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,ChartKit.SkiaSharpView.PieSeries{``0}},ChartKit.SkiaSharpView.Extensions.GaugeOptions)">
+            <summary>
+            Converts an IEnumerable to an ObservableCollection of pie series.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <param name="source">The data source.</param>
+            <param name="builder">An optional builder.</param>
+            <param name="gaugeOptions">Defines whether the series are treaded as gauge.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.PieChartExtensions.AsPieSeries``2(System.Collections.Generic.IEnumerable{``0},System.Action{``0,ChartKit.SkiaSharpView.PieSeries{``0,``1}},ChartKit.SkiaSharpView.Extensions.GaugeOptions)">
+            <summary>
+            Converts an IEnumerable to an ObservableCollection of pie series.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <typeparam name="TVisual">The type of the visual.</typeparam>
+            <param name="source">The data source.</param>
+            <param name="builder">An optional builder.</param>
+            <param name="gaugeOptions">Defines whether the series are treaded as gauge.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.PieChartExtensions.AsPieSeries``3(System.Collections.Generic.IEnumerable{``0},System.Action{``0,ChartKit.SkiaSharpView.PieSeries{``0,``1,``2}},ChartKit.SkiaSharpView.Extensions.GaugeOptions)">
+            <summary>
+            Converts an IEnumerable to an ObservableCollection of pie series.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <typeparam name="TVisual">The type of the visual.</typeparam>
+            <typeparam name="TLabel">The type of the label.</typeparam>
+            <param name="source">The data source.</param>
+            <param name="builder">An optional builder.</param>
+            <param name="gaugeOptions">Defines whether the series are treaded as gauge.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Extensions.PieChartExtensions.AsPieSeries``2(System.Collections.Generic.IEnumerable{``0},System.Action{``0,``1},ChartKit.SkiaSharpView.Extensions.GaugeOptions)">
+            <summary>
+            Converts an IEnumerable to an ObservableCollection of pie series.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <typeparam name="TSeries">The type of the series.</typeparam>
+            <param name="source">The data source.</param>
+            <param name="builder">An optional builder.</param>
+            <param name="gaugeOptions">Defines whether the series are treaded as gauge.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.GaugeBuilder">
+            <summary>
+            Defines a helper class to build gauges.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.InnerRadius">
+            <summary>
+            Gets or sets the inner radius, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The inner radius.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithInnerRadius(System.Nullable{System.Double})">
+            <summary>
+            Sets the inner radius, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.OffsetRadius">
+            <summary>
+            Gets or sets the offset radius, the separation between each gauge if multiple gauges are nested,
+            setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithOffsetRadius(System.Nullable{System.Double})">
+            <summary>
+            Sets the offset radius, the separation between each gauge if multiple gauges are nested,
+            setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.MaxColumnWidth">
+            <summary>
+            Gets or sets the maximum width of the radial column, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The maximum width of the radial column.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithMaxColumnWidth(System.Nullable{System.Double})">
+            <summary>
+            Sets the maximum width of the radial column, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.CornerRadius">
+            <summary>
+            Gets or sets the corner radius, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The corner radius.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithCornerRadius(System.Nullable{System.Double})">
+            <summary>
+            Sets the corner radius, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.RadialAlign">
+            <summary>
+            Gets or sets the radial alignment, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The inner radius.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithRadialAlign(System.Nullable{ChartKit.Measure.RadialAlignment})">
+            <summary>
+            Sets the radial alignment, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.BackgroundInnerRadius">
+            <summary>
+            Gets or sets the background inner radius, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The background inner radius.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithBackgroundInnerRadius(System.Nullable{System.Double})">
+            <summary>
+            Sets the background inner radius, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.BackgroundOffsetRadius">
+            <summary>
+            Gets or sets the background offset radius, the separation between each gauge if multiple gauges are nested,
+            setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The background relative inner radius.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithBackgroundOffsetRadius(System.Nullable{System.Double})">
+            <summary>
+            Sets the background offset radius, the separation between each gauge if multiple gauges are nested,
+            setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.BackgroundMaxRadialColumnWidth">
+            <summary>
+            Gets or sets the width of the background maximum radial column, setting this property to null will let the theme
+            decide the value, default is null.
+            </summary>
+            <value>
+            The width of the background maximum radial column.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithBackgroundMaxRadialColumnWidth(System.Nullable{System.Double})">
+            <summary>
+            Sets the width of the background maximum radial column, setting this property to null will let the theme
+            decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.BackgroundCornerRadius">
+            <summary>
+            Gets or sets the background corner radius, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The background corner radius.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithBackgroundCornerRadius(System.Nullable{System.Double})">
+            <summary>
+            Sets the background corner radius, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.Background">
+            <summary>
+            Gets or sets the background.
+            </summary>
+            <value>
+            The background.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithBackground(ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Sets the background.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.LabelsSize">
+            <summary>
+            Gets or sets the size of the labels, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The size of the labels.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithLabelsSize(System.Double)">
+            <summary>
+            Sets the size of the labels, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.LabelsPosition">
+            <summary>
+            Gets or sets the labels position, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <value>
+            The labels position.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithLabelsPosition(ChartKit.Measure.PolarLabelsPosition)">
+            <summary>
+            Sets  the labels position, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.GaugeBuilder.LabelFormatter">
+            <summary>
+            Gets or sets the label formatter.
+            </summary>
+            <value>
+            The label formatter.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.WithLabelFormatter(System.Func{ChartKit.Kernel.ChartPoint,System.String})">
+            <summary>
+            Sets  the labels position, setting this property to null will let the theme decide the value, default is null.
+            </summary>
+            <param name="value">the value.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.AddValue(ChartKit.Defaults.ObservableValue,System.String,ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},ChartKit.Drawing.IPaint{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Adds the value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="seriesName">The series name.</param>
+            <param name="seriesPaint">The series paint.</param>
+            <param name="labelsPaint">The labels paint.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.AddValue(ChartKit.Defaults.ObservableValue,System.String,SkiaSharp.SKColor,System.Nullable{SkiaSharp.SKColor})">
+            <summary>
+            Adds the value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="seriesName">The series name.</param>
+            <param name="seriesColor">Color of the series.</param>
+            <param name="labelsColor">Color of the labels.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.AddValue(System.Double,System.String,SkiaSharp.SKColor,System.Nullable{SkiaSharp.SKColor})">
+            <summary>
+            Adds the value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="seriesName">The series name.</param>
+            <param name="seriesColor">Color of the series.</param>
+            <param name="labelsColor">Color of the labels.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.AddValue(ChartKit.Defaults.ObservableValue)">
+            <summary>
+            Adds the value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.AddValue(System.Double)">
+            <summary>
+            Adds the value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.AddValue(ChartKit.Defaults.ObservableValue,System.String)">
+            <summary>
+            Adds the value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="seriesName">The series name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.AddValue(System.Double,System.String)">
+            <summary>
+            Adds the value.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="seriesName">The series name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.BuildSeries">
+            <summary>
+            Builds the series.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.ApplyStyles(ChartKit.SkiaSharpView.PieSeries{ChartKit.Defaults.ObservableValue})">
+            <summary>
+            Applies the styles the specified series.
+            </summary>
+            <param name="series">The series.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.ApplyStylesToFill(ChartKit.SkiaSharpView.PieSeries{ChartKit.Defaults.ObservableValue})">
+            <summary>
+            Applies the styles to fill series.
+            </summary>
+            <param name="series">The series.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GaugeBuilder.ApplyStylesToSeries(ChartKit.SkiaSharpView.PieSeries{ChartKit.Defaults.ObservableValue})">
+            <summary>
+            Applies the styles to series.
+            </summary>
+            <param name="series">The series.</param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.GeoMapCore">
+            <inheritdoc cref="T:ChartKit.Geo.CoreMap`1"/>.
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GeoMapCore.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.GeoMapCore"/> class from the given core map.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GeoMapCore.#ctor(ChartKit.Geo.CoreMap{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.GeoMapCore"/> class from the given core map.
+            </summary>
+            <param name="coreMap"></param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GeoMapCore.GetWorldMap">
+            <inheritdoc cref="M:ChartKit.Geo.Maps.GetWorldMap``1"/>.
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GeoMapCore.GetMapFromDirectory(System.String)">
+            <inheritdoc cref="M:ChartKit.Geo.Maps.GetMapFromDirectory``1(System.String)"/>.
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GeoMapCore.GetMapFromStreamReader(System.IO.StreamReader)">
+            <inheritdoc cref="M:ChartKit.Geo.Maps.GetMapFromStreamReader``1(System.IO.StreamReader)"/>.
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GeoMapCore.GetMapFromDirectoryAsync(System.String)">
+            <inheritdoc cref="M:ChartKit.Geo.Maps.GetMapFromDirectory``1(System.String)"/>.
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.GeoMapCore.GetMapFromStreamReaderAsync(System.IO.StreamReader)">
+            <inheritdoc cref="M:ChartKit.Geo.Maps.GetMapFromStreamReader``1(System.IO.StreamReader)"/>.
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.HeatLandSeries">
+            <inheritdoc cref="T:ChartKit.HeatLandSeries`1"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.HeatLandSeries.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.HeatLandSeries"/> class.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.HeatSeries`1">
+            <summary>
+            Defines a heat series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.HeatSeries`2">
+            <summary>
+            Defines a heat series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.HeatSeries`3">
+            <summary>
+            Defines a heat series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.HeatSeries`3.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.HeatSeries`3"/> class.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.LineSeries`1">
+            <summary>
+            Defines a line series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.LineSeries`2">
+            <summary>
+            Defines a line series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.LineSeries`3">
+            <summary>
+            Defines a line series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.LiveChartsSkiaSharp">
+            <summary>
+            Defines the default LiveCharts-SkiaSharp settings
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.DefaultSKTypeface">
+            <summary>
+            Gets or sets an SKTypeface instance to use globally on any paint that does not specify any.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.UseDefaults(ChartKit.Kernel.ChartKitSettings)">
+            <summary>
+            Configures LiveCharts using the default settings for SkiaSharp.
+            </summary>
+            <param name="settings">The settings.</param>
+            <returns>The settings.</returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.AddSkiaSharp(ChartKit.Kernel.ChartKitSettings)">
+            <summary>
+            Adds SkiaSharp as the library backend.
+            </summary>
+            <param name="settings">The settings.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.HasGlobalSKTypeface(ChartKit.Kernel.ChartKitSettings,SkiaSharp.SKTypeface)">
+            <summary>
+            Registers a global SKTypeface instance to use on any <see cref="T:ChartKit.SkiaSharpView.Painting.Paint"/> that does not specify a typeface.
+            </summary>
+            <param name="settings"></param>
+            <param name="typeface"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.AsSKColor(ChartKit.Drawing.LvcColor,System.Nullable{System.Byte})">
+            <summary>
+            Converts a <see cref="T:ChartKit.Drawing.LvcColor"/> to a <see cref="T:SkiaSharp.SKColor"/> instance.
+            </summary>
+            <param name="color">The color.</param>
+            <param name="alphaOverrides">The alpha overrides.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.WithOpacity(ChartKit.Drawing.LvcColor,System.Byte)">
+            <summary>
+            Creates a new color based on the 
+            </summary>
+            <param name="color">The color.</param>
+            <param name="opacity">The opacity from 0 to 255.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.AsLvcColor(SkiaSharp.SKColor)">
+            <summary>
+            Converts a <see cref="T:SkiaSharp.SKColor"/> to a <see cref="T:ChartKit.Drawing.LvcColor"/> intance.
+            </summary>
+            <param name="color">The color</param>
+            <returns></returns>
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.SkiaFontMatchChar">
+            <summary>
+            Gets the <see cref="F:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.SkiaFontMatchChar"/> key.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.MatchChar(System.Char)">
+            <summary>
+            Matches
+            </summary>
+            <param name="char"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.AsLiveChartsPieSeries``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,ChartKit.SkiaSharpView.PieSeries{``0,ChartKit.SkiaSharpView.Drawing.Geometries.DoughnutGeometry,ChartKit.SkiaSharpView.Drawing.Geometries.LabelGeometry}})">
+            <summary>
+            Converts an IEnumerable to an ObservableCollection of pie series.
+            </summary>
+            <typeparam name="T">The type.</typeparam>
+            <param name="source">The data source.</param>
+            <param name="builder">An optional builder.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LiveChartsSkiaSharp.GetDistanceTo(ChartKit.Kernel.ChartPoint,ChartKit.Drawing.LvcPoint)">
+            <summary>
+            Calculates the distance in pixels from the target <see cref="T:ChartKit.Kernel.ChartPoint"/> to the given location in the UI.
+            </summary>
+            <param name="target">The target.</param>
+            <param name="location">The location.</param>
+            <returns>The distance in pixels.</returns>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.LogaritmicAxis">
+            <summary>
+            Defines a logarithmic axis.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.LogaritmicAxis.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.LogaritmicAxis"/> class.
+            </summary>
+            <param name="base">The log base.</param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.MapFactory">
+            <summary>
+            Defines a map builder.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.MapFactory.GenerateLands(ChartKit.Geo.MapContext{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Geo.IMapFactory`1.GenerateLands(ChartKit.Geo.MapContext{`0})"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.MapFactory.ViewTo(ChartKit.GeoMap{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},System.Object)">
+            <inheritdoc cref="M:ChartKit.Geo.IMapFactory`1.ViewTo(ChartKit.GeoMap{`0},System.Object)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.MapFactory.Pan(ChartKit.GeoMap{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},ChartKit.Drawing.LvcPoint)">
+            <inheritdoc cref="M:ChartKit.Geo.IMapFactory`1.Pan(ChartKit.GeoMap{`0},ChartKit.Drawing.LvcPoint)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.MapFactory.Dispose">
+            <summary>
+            Disposes the map factory.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Motion.SKMatrixMotionProperty">
+            <summary>
+            Defines a motion property to handle the <see cref="T:SkiaSharp.SKMatrix"/> type.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Motion.SKMatrixMotionProperty.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Motion.SKMatrixMotionProperty"/> class.
+            </summary>
+            <param name="propertyName">The property name.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Motion.SKMatrixMotionProperty.#ctor(System.String,SkiaSharp.SKMatrix)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Motion.SKMatrixMotionProperty"/> class.
+            </summary>
+            <param name="propertyName">The property name.</param>
+            <param name="matrix">The initial matrix.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Motion.SKMatrixMotionProperty.OnGetMovement(System.Single)">
+            <inheritdoc cref="M:ChartKit.Motion.MotionProperty`1.OnGetMovement(System.Single)"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.Effects.DashEffect">
+            <summary>
+            Creates a stroke dash effect.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Painting.Effects.PathEffect" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Effects.DashEffect.#ctor(System.Single[],System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.Effects.DashEffect"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Effects.DashEffect.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Effects.DashEffect.CreateEffect(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <summary>
+            Creates the path effect.
+            </summary>
+            <param name="drawingContext">The drawing context.</param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.Effects.PathEffect">
+            <summary>
+            A wrapper object for skia sharp path effects.
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Effects.PathEffect.SKPathEffect">
+            <summary>
+            Gets or sets the sk path effect.
+            </summary>
+            <value>
+            The sk path effect.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Effects.PathEffect.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>
+            A new object that is a copy of this instance.
+            </returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Effects.PathEffect.CreateEffect(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <summary>
+            Creates the path effect.
+            </summary>
+            <param name="drawingContext">The drawing context.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Effects.PathEffect.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.ImageFilters.Blur">
+            <summary>
+            Creates a blur image filter.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.Blur.#ctor(System.Single,System.Single,SkiaSharp.SKImageFilter,SkiaSharp.SKImageFilter.CropRect)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.ImageFilters.Blur"/> class.
+            </summary>
+            <param name="sigmaX">The sigma x.</param>
+            <param name="sigmaY">The sigma y.</param>
+            <param name="input">The input.</param>
+            <param name="cropRect">The crop rect.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.Blur.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.Blur.CreateFilter(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <summary>
+            Creates the filter.
+            </summary>
+            <param name="drawingContext">The drawing context.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.ImageFilters.DropShadow">
+            <summary>
+            Creates a drop shadow image filter.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.DropShadow.#ctor(System.Single,System.Single,System.Single,System.Single,SkiaSharp.SKColor,SkiaSharp.SKImageFilter,SkiaSharp.SKImageFilter.CropRect)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.ImageFilters.DropShadow"/> class.
+            </summary>
+            <param name="dx">The dx.</param>
+            <param name="dy">The dy.</param>
+            <param name="sigmaX">The sigma x.</param>
+            <param name="sigmaY">The sigma y.</param>
+            <param name="color">The color.</param>
+            <param name="input">The input.</param>
+            <param name="cropRect">The crop rect.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.DropShadow.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.DropShadow.CreateFilter(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <summary>
+            Creates the image filter.
+            </summary>
+            <param name="drawingContext">The drawing context.</param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter">
+            <summary>
+            A wrapper object for skia sharp image filters.
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter.SKImageFilter">
+            <summary>
+            Gets or sets the sk image filter.
+            </summary>
+            <value>
+            The sk image filter.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter.CreateFilter(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <summary>
+            Creates the image filter.
+            </summary>
+            <param name="drawingContext">The drawing context.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFiltersMergeOperation">
+            <summary>
+            Merges multiple image filters.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFiltersMergeOperation.#ctor(ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFilter[],SkiaSharp.SKImageFilter.CropRect)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFiltersMergeOperation"/> class.
+            </summary>
+            <param name="imageFilters">The image filters.</param>
+            <param name="cropRect">The crop rect.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFiltersMergeOperation.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFiltersMergeOperation.CreateFilter(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <summary>
+            Creates the image filter.
+            </summary>
+            <param name="drawingContext">The drawing context.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.ImageFilters.ImageFiltersMergeOperation.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.LinearGradientPaint">
+            <summary>
+            Defines a set of geometries that will be painted using a linear gradient shader.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Painting.Paint" />
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.s_defaultStartPoint">
+            <summary>
+            Default start point.
+            </summary>
+        </member>
+        <member name="F:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.s_defaultEndPoint">
+            <summary>
+            Default end point.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.#ctor(SkiaSharp.SKColor[],SkiaSharp.SKPoint,SkiaSharp.SKPoint,System.Single[],SkiaSharp.SKShaderTileMode)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.LinearGradientPaint"/> class.
+            </summary>
+            <param name="gradientStops">The gradient stops.</param>
+            <param name="startPoint">
+            The start point, both X and Y in the range of 0 to 1, where 0 is the start of the axis and 1 the end.
+            </param>
+            <param name="endPoint">
+            The end point, both X and Y in the range of 0 to 1, where 0 is the start of the axis and 1 the end.
+            </param>
+            <param name="colorPos">
+            An array of integers in the range of 0 to 1.
+            These integers indicate the relative positions of the colors, You can set that argument to null to equally
+            space the colors, default is null.
+            </param>
+            <param name="tileMode">
+            The shader tile mode, default is <see cref="F:SkiaSharp.SKShaderTileMode.Repeat"/>.
+            </param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.#ctor(SkiaSharp.SKColor[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.LinearGradientPaint"/> class.
+            </summary>
+            <param name="gradientStops">The gradient stops.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.#ctor(SkiaSharp.SKColor,SkiaSharp.SKColor,SkiaSharp.SKPoint,SkiaSharp.SKPoint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.LinearGradientPaint"/> class.
+            </summary>
+            <param name="startColor">The start color.</param>
+            <param name="endColor">The end color.</param>
+            <param name="startPoint">
+            The start point, both X and Y in the range of 0 to 1, where 0 is the start of the axis and 1 the end.
+            </param>
+            <param name="endPoint">
+            The end point, both X and Y in the range of 0 to 1, where 0 is the start of the axis and 1 the end.
+            </param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.#ctor(SkiaSharp.SKColor,SkiaSharp.SKColor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.LinearGradientPaint"/> class.
+            </summary>
+            <param name="start">The start.</param>
+            <param name="end">The end.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.CloneTask">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.CloneTask" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.ApplyOpacityMask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,ChartKit.Drawing.IPaintable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.ApplyOpacityMask(`0,ChartKit.Drawing.IPaintable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.RestoreOpacityMask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,ChartKit.Drawing.IPaintable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.RestoreOpacityMask(`0,ChartKit.Drawing.IPaintable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.InitializeTask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.InitializeTask(`0)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.LinearGradientPaint.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.Paint">
+            <inheritdoc cref="T:ChartKit.Drawing.IPaint`1" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.Paint"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.#ctor(SkiaSharp.SKColor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.Paint"/> class.
+            </summary>
+            <param name="color">The color.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.ZIndex">
+            <inheritdoc cref="P:ChartKit.Drawing.IPaint`1.ZIndex"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.StrokeThickness">
+            <inheritdoc cref="P:ChartKit.Drawing.IPaint`1.StrokeThickness" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.Style">
+            <summary>
+            Gets or sets the style.
+            </summary>
+            <value>
+            The style.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.IsStroke">
+            <inheritdoc cref="P:ChartKit.Drawing.IPaint`1.IsStroke" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.IsFill">
+            <inheritdoc cref="P:ChartKit.Drawing.IPaint`1.IsFill" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.FontFamily">
+            <inheritdoc cref="P:ChartKit.Drawing.IPaint`1.FontFamily" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.SKFontStyle">
+            <summary>
+            Gets or sets the font style.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.SKTypeface">
+            <summary>
+            Gets or sets the SKTypeface, if null, LiveCharts will build one based on the
+            <see cref="P:ChartKit.SkiaSharpView.Painting.Paint.FontFamily"/> and <see cref="P:ChartKit.SkiaSharpView.Painting.Paint.SKFontStyle"/> properties. Default is null.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.HasCustomFont">
+            <summary>
+            Gets a value indication whether the paint has a custom font.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.IsAntialias">
+            <summary>
+            Gets or sets a value indicating whether this instance is antialias.
+            </summary>
+            <value>
+              <c>true</c> if this instance is antialias; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.StrokeCap">
+            <summary>
+            Gets or sets the stroke cap.
+            </summary>
+            <value>
+            The stroke cap.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.StrokeJoin">
+            <summary>
+            Gets or sets the stroke join.
+            </summary>
+            <value>
+            The stroke join.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.StrokeMiter">
+            <summary>
+            Gets or sets the stroke miter.
+            </summary>
+            <value>
+            The stroke miter.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.Color">
+            <summary>
+            Gets or sets the color.
+            </summary>
+            <value>
+            The color.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.IsPaused">
+            <summary>
+            Gets or sets a value indicating whether this instance is paused.
+            </summary>
+            <value>
+            <c>true</c> if this instance is paused; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.PathEffect">
+            <summary>
+            Gets or sets the path effect.
+            </summary>
+            <value>
+            The path effect.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.Painting.Paint.ImageFilter">
+            <summary>
+            Gets or sets the image filer.
+            </summary>
+            <value>
+            The image filer.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.InitializeTask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.InitializeTask(`0)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.GetGeometries(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.GetGeometries(ChartKit.Motion.MotionCanvas{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.SetGeometries(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},System.Collections.Generic.HashSet{ChartKit.Drawing.IDrawable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext}})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.SetGeometries(ChartKit.Motion.MotionCanvas{`0},System.Collections.Generic.HashSet{ChartKit.Drawing.IDrawable{`0}})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.AddGeometryToPaintTask(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},ChartKit.Drawing.IDrawable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.AddGeometryToPaintTask(ChartKit.Motion.MotionCanvas{`0},ChartKit.Drawing.IDrawable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.RemoveGeometryFromPainTask(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},ChartKit.Drawing.IDrawable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.RemoveGeometryFromPainTask(ChartKit.Motion.MotionCanvas{`0},ChartKit.Drawing.IDrawable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.ClearGeometriesFromPaintTask(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.ClearGeometriesFromPaintTask(ChartKit.Motion.MotionCanvas{`0})"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.ReleaseCanvas(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.ReleaseCanvas(ChartKit.Motion.MotionCanvas{`0})"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.GetClipRectangle(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.GetClipRectangle(ChartKit.Motion.MotionCanvas{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.SetClipRectangle(ChartKit.Motion.MotionCanvas{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},ChartKit.Drawing.LvcRectangle)">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.SetClipRectangle(ChartKit.Motion.MotionCanvas{`0},ChartKit.Drawing.LvcRectangle)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.CloneTask">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.CloneTask" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.ApplyOpacityMask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,ChartKit.Drawing.IPaintable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.ApplyOpacityMask(`0,ChartKit.Drawing.IPaintable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.RestoreOpacityMask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,ChartKit.Drawing.IPaintable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.ApplyOpacityMask(`0,ChartKit.Drawing.IPaintable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.Paint.GetSKTypeface">
+            <summary>
+            Gets a <see cref="P:ChartKit.SkiaSharpView.Painting.Paint.SKTypeface"/> from the <see cref="P:ChartKit.SkiaSharpView.Painting.Paint.FontFamily"/> property.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.PaintTask">
+            <inheritdoc cref="T:ChartKit.Drawing.IPaint`1" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.RadialGradientPaint">
+            <summary>
+            Defines a set of geometries that will be painted using a radial gradient shader.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Painting.Paint" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.RadialGradientPaint.#ctor(SkiaSharp.SKColor[],System.Nullable{SkiaSharp.SKPoint},System.Single,System.Single[],SkiaSharp.SKShaderTileMode)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.RadialGradientPaint"/> class.
+            </summary>
+            <param name="gradientStops">The gradient stops.</param>
+            <param name="center">
+            The center point of the gradient, both X and Y in the range of 0 to 1, where 0 is the start of the axis and 1 the end,
+            default is (0.5, 0.5).
+            </param>
+            <param name="radius">
+            The radius, in the range of 0 to 1, where 1 is the minimum of both Width and Height of the chart, default is 0.5.
+            </param>
+            <param name="colorPos">
+            An array of integers in the range of 0 to 1.
+            These integers indicate the relative positions of the colors, You can set that argument to null to equally
+            space the colors, default is null.
+            </param>
+            <param name="tileMode">
+            The shader tile mode, default is <see cref="F:SkiaSharp.SKShaderTileMode.Repeat"/>.
+            </param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.RadialGradientPaint.#ctor(SkiaSharp.SKColor,SkiaSharp.SKColor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.RadialGradientPaint"/> class.
+            </summary>
+            <param name="centerColor">Color of the center.</param>
+            <param name="outerColor">Color of the outer.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.RadialGradientPaint.CloneTask">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.CloneTask" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.RadialGradientPaint.InitializeTask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.InitializeTask(`0)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.RadialGradientPaint.ApplyOpacityMask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,ChartKit.Drawing.IPaintable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.ApplyOpacityMask(`0,ChartKit.Drawing.IPaintable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.RadialGradientPaint.RestoreOpacityMask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,ChartKit.Drawing.IPaintable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.RestoreOpacityMask(`0,ChartKit.Drawing.IPaintable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.RadialGradientPaint.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.Painting.SolidColorPaint">
+            <summary>
+            Defines a set of geometries that will be painted using a solid color.
+            </summary>
+            <seealso cref="T:ChartKit.SkiaSharpView.Painting.Paint" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.SolidColorPaint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.SolidColorPaint"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.SolidColorPaint.#ctor(SkiaSharp.SKColor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.SolidColorPaint"/> class.
+            </summary>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.SolidColorPaint.#ctor(SkiaSharp.SKColor,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.Painting.SolidColorPaint"/> class.
+            </summary>
+            <param name="color">The color.</param>
+            <param name="strokeWidth">Width of the stroke.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.SolidColorPaint.CloneTask">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.CloneTask" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.SolidColorPaint.InitializeTask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext)">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.InitializeTask(`0)" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.SolidColorPaint.ApplyOpacityMask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,ChartKit.Drawing.IPaintable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.ApplyOpacityMask(`0,ChartKit.Drawing.IPaintable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.SolidColorPaint.RestoreOpacityMask(ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext,ChartKit.Drawing.IPaintable{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Drawing.IPaint`1.RestoreOpacityMask(`0,ChartKit.Drawing.IPaintable{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.Painting.SolidColorPaint.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.PieSeries`1">
+            <summary>
+            Defines a pie series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.PieSeries`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.PieSeries`1"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.PieSeries`1.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.PieSeries`1"/> class.
+            </summary>
+            <param name="isGauge"></param>
+            <param name="isGaugeFill"></param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.PieSeries`2">
+            <summary>
+            Defines a pie series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.PieSeries`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.PieSeries`1"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.PieSeries`2.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.PieSeries`2"/> class.
+            </summary>
+            <param name="isGauge"></param>
+            <param name="isGaugeFill"></param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.PieSeries`3">
+            <summary>
+            Defines a pie series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.PieSeries`3.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.PieSeries`1"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.PieSeries`3.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.PieSeries`3"/> class.
+            </summary>
+            <param name="isGauge"></param>
+            <param name="isGaugeFill"></param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.PolarAxis">
+            <inheritdoc cref="T:ChartKit.Kernel.Sketches.ICartesianAxis" />
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.PolarLineSeries`1">
+            <summary>
+            Defines a polar line series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.PolarLineSeries`2">
+            <summary>
+            Defines a polar line series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.PolarLineSeries`3">
+            <summary>
+            Defines a polar line series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.RectangularSection">
+            <summary>
+            Defines a rectangular section in a Cartesian chart.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.RowSeries`1">
+            <summary>
+            Defines a row series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam> data label of every point.
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.RowSeries`2">
+            <summary>
+            Defines a row series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.RowSeries`3">
+            <summary>
+            Defines a row series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.ScatterSeries`1">
+            <summary>
+            Defines a scatter series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.ScatterSeries`2">
+            <summary>
+            Defines a scatter series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.ScatterSeries`3">
+            <summary>
+            Defines a scatter series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart">
+            <summary>
+            A chart that is able to generate images or draw to a given canvas.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.CoreCanvas">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.CoreCanvas"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.CoreChart">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.CoreChart"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.Background">
+            <summary>
+            Gets or sets the background.
+            </summary>
+            <value>
+            The background.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.Height">
+            <summary>
+            Gets or sets the height.
+            </summary>
+            <value>
+            The height.
+            </value>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.Width">
+            <summary>
+            Gets or sets the width.
+            </summary>
+            <value>
+            The width.
+            </value>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.GetImage">
+            <summary>
+            Gets the current <see cref="T:SkiaSharp.SKSurface"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.SaveImage(System.IO.Stream,SkiaSharp.SKEncodedImageFormat,System.Int32)">
+            <summary>
+            Saves the image to the specified path.
+            </summary>
+            <param name="stream">The stream.</param>
+            <param name="format">The format.</param>
+            <param name="quality">The quality, an integer from 0 to 100.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.SaveImage(System.String,SkiaSharp.SKEncodedImageFormat,System.Int32)">
+            <summary>
+            Saves the image to the specified path.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="format">The format.</param>
+            <param name="quality">The quality, an integer from 0 to 100.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.SaveImage(SkiaSharp.SKCanvas,System.Boolean)">
+            <summary>
+            Draws the image to the specified canvas.
+            </summary>
+            <param name="canvas">The canvas</param>
+            <param name="clearCanvasOnBeginDraw">Indicates whether the canvas should be cleared when the draw starts, default is false.</param>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.DrawOnCanvas(SkiaSharp.SKCanvas,SkiaSharp.SKSurface,System.Boolean)">
+            <summary>
+            Draws the chart to the specified canvas.
+            </summary>
+            <param name="canvas">The canvas.</param>
+            <param name="surface">The surface.</param>
+            <param name="clearCanvasOnBeginDraw">[probably an obsolete param] Indicates whether the canvas should be cleared when the draw starts, default is false.</param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart">
+            <summary>
+            In-memory chart that is able to generate a chart images.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.#ctor(ChartKit.Kernel.Sketches.ICartesianChartView{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart"/> class.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.DesignerMode">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.DesignerMode" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.Core">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.Core"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.SyncContext">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.SyncContext"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.XAxes">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.XAxes"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.YAxes">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.YAxes"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.Sections">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.Sections"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.VisualElements">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.VisualElements"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.Series">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.Series"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.DrawMarginFrame">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.DrawMarginFrame"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.ZoomMode">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.ZoomMode"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.ZoomingSpeed">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.ZoomingSpeed"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.AutoUpdateEnabled">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.AutoUpdateEnabled"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.TooltipFindingStrategy">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.ICartesianChartView`1.TooltipFindingStrategy"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.Legend">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Legend"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.Tooltip">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Tooltip"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.DrawMargin">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.DrawMargin"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.AnimationsSpeed">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.AnimationsSpeed"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.EasingFunction">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.EasingFunction"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.UpdaterThrottler">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.UpdaterThrottler"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.LegendPosition">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.LegendPosition"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.TooltipPosition">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.TooltipPosition"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.Title">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Title"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.LegendTextPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendTextPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.LegendBackgroundPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendBackgroundPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.LegendTextSize">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendTextSize"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.TooltipTextPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipTextPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.TooltipBackgroundPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipBackgroundPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.TooltipTextSize">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipTextSize"/>
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.Measuring">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.Measuring" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.UpdateStarted">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.UpdateStarted" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.UpdateFinished">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.UpdateFinished" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.DataPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView.DataPointerDown" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.ChartPointPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView.ChartPointPointerDown" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.VisualElementsPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.VisualElementsPointerDown"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.ScaleUIPoint(ChartKit.Drawing.LvcPoint,System.Int32,System.Int32)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.ICartesianChartView`1.ScaleUIPoint(ChartKit.Drawing.LvcPoint,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.ScalePixelsToData(ChartKit.Drawing.LvcPointD,System.Int32,System.Int32)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.ICartesianChartView`1.ScalePixelsToData(ChartKit.Drawing.LvcPointD,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.ScaleDataToPixels(ChartKit.Drawing.LvcPointD,System.Int32,System.Int32)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.ICartesianChartView`1.ScaleDataToPixels(ChartKit.Drawing.LvcPointD,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.GetPointsAt(ChartKit.Drawing.LvcPoint,ChartKit.Measure.TooltipFindingStrategy)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartView`1.GetPointsAt(ChartKit.Drawing.LvcPoint,ChartKit.Measure.TooltipFindingStrategy)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKCartesianChart.GetVisualsAt(ChartKit.Drawing.LvcPoint)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartView`1.GetVisualsAt(ChartKit.Drawing.LvcPoint)"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.SKCharts.SKDefaultLegend">
+            <summary>
+            Defines the default legend for a chart.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKDefaultLegend.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKDefaultLegend"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKDefaultLegend.FontPaint">
+            <summary>
+            Gets or sets the legend font paint.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKDefaultLegend.TextSize">
+            <summary>
+            Gets or sets the fonts size.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKDefaultLegend.Draw(ChartKit.Chart{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartLegend`1.Draw(ChartKit.Chart{`0})"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKDefaultLegend.Measure(ChartKit.Chart{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartLegend`1.Measure(ChartKit.Chart{`0})"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.SKCharts.SKDefaultTooltip">
+            <summary>
+            Defines the default tooltip.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKDefaultTooltip.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKDefaultTooltip"/> class.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKDefaultTooltip.FontPaint">
+            <summary>
+            Gets or sets the legend font paint.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKDefaultTooltip.BackgroundPaint">
+            <summary>
+            Gets or sets the background paint.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKDefaultTooltip.TextSize">
+            <summary>
+            Gets or sets the fonts size.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKDefaultTooltip.Show(System.Collections.Generic.IEnumerable{ChartKit.Kernel.ChartPoint},ChartKit.Chart{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartTooltip`1.Show(System.Collections.Generic.IEnumerable{ChartKit.Kernel.ChartPoint},ChartKit.Chart{`0})" />
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKDefaultTooltip.Hide(ChartKit.Chart{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartTooltip`1.Hide(ChartKit.Chart{`0})"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.SKCharts.SKGeoMap">
+            <inheritdoc cref="T:ChartKit.Geo.IGeoMapView`1"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKGeoMap"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.#ctor(ChartKit.Geo.IGeoMapView{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKGeoMap"/> class.
+            </summary>
+            <param name="mapView">The map view.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.AutoUpdateEnabled">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.AutoUpdateEnabled" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.SyncContext">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.SyncContext" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.DesignerMode">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.DesignerMode" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.ActiveMap">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.ActiveMap"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.Canvas">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.Canvas"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.MapProjection">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.MapProjection"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.Stroke">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.Stroke"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.Fill">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.Fill"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.Series">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.Series"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.ViewCommand">
+            <inheritdoc cref="P:ChartKit.Geo.IGeoMapView`1.ViewCommand"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKGeoMap.DrawOnCanvas(SkiaSharp.SKCanvas,SkiaSharp.SKSurface,System.Boolean)">
+            <inheritdoc cref="M:ChartKit.SkiaSharpView.SKCharts.InMemorySkiaSharpChart.DrawOnCanvas(SkiaSharp.SKCanvas,SkiaSharp.SKSurface,System.Boolean)"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.SKCharts.SKPieChart">
+            <summary>
+            In-memory chart that is able to generate a chart images.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPieChart.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKPieChart"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPieChart.#ctor(ChartKit.Kernel.Sketches.IPieChartView{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKPieChart"/> class.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.DesignerMode">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.DesignerMode" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.Core">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPieChartView`1.Core"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.SyncContext">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.SyncContext"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.Series">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPieChartView`1.Series"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.VisualElements">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.VisualElements"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.InitialRotation">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPieChartView`1.InitialRotation"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.MaxAngle">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPieChartView`1.MaxAngle"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.Total">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPieChartView`1.Total"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.MaxValue">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPieChartView`1.MaxValue"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.MinValue">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPieChartView`1.MinValue"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.AutoUpdateEnabled">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.AutoUpdateEnabled"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.Legend">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Legend"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.Tooltip">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Tooltip"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.DrawMargin">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.DrawMargin"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.AnimationsSpeed">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.AnimationsSpeed"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.EasingFunction">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.EasingFunction"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.UpdaterThrottler">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.UpdaterThrottler"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.LegendPosition">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.LegendPosition"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.TooltipPosition">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.TooltipPosition"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.Title">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Title"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.IsClockwise">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPieChartView`1.IsClockwise"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.LegendTextPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendTextPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.LegendBackgroundPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendBackgroundPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.LegendTextSize">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendTextSize"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.TooltipTextPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipTextPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.TooltipBackgroundPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipBackgroundPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPieChart.TooltipTextSize">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipTextSize"/>
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPieChart.Measuring">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.Measuring" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPieChart.UpdateStarted">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.UpdateStarted" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPieChart.UpdateFinished">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.UpdateFinished" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPieChart.DataPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView.DataPointerDown" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPieChart.ChartPointPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView.ChartPointPointerDown" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPieChart.VisualElementsPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.VisualElementsPointerDown"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPieChart.GetPointsAt(ChartKit.Drawing.LvcPoint,ChartKit.Measure.TooltipFindingStrategy)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartView`1.GetPointsAt(ChartKit.Drawing.LvcPoint,ChartKit.Measure.TooltipFindingStrategy)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPieChart.GetVisualsAt(ChartKit.Drawing.LvcPoint)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartView`1.GetVisualsAt(ChartKit.Drawing.LvcPoint)"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.SKCharts.SKPolarChart">
+            <summary>
+            In-memory chart that is able to generate a chart images.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKPolarChart"/> class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.#ctor(ChartKit.Kernel.Sketches.IPolarChartView{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.SKCharts.SKPolarChart"/> class.
+            </summary>
+            <param name="view">The view.</param>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.DesignerMode">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.DesignerMode" />
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.Core">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPolarChartView`1.Core"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.SyncContext">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.SyncContext"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.AngleAxes">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPolarChartView`1.AngleAxes"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.RadiusAxes">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPolarChartView`1.RadiusAxes"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.Series">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPolarChartView`1.Series"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.VisualElements">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.VisualElements"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.Legend">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Legend"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.Tooltip">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Tooltip"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.DrawMargin">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.DrawMargin"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.AnimationsSpeed">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.AnimationsSpeed"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.EasingFunction">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.EasingFunction"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.UpdaterThrottler">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.UpdaterThrottler"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.LegendPosition">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.LegendPosition"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.TooltipPosition">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView.TooltipPosition"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.FitToBounds">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPolarChartView`1.FitToBounds"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.TotalAngle">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPolarChartView`1.TotalAngle"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.InnerRadius">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPolarChartView`1.InnerRadius"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.InitialRotation">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IPolarChartView`1.InitialRotation"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.AutoUpdateEnabled">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.AutoUpdateEnabled"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.LegendTextPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendTextPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.LegendBackgroundPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendBackgroundPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.LegendTextSize">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.LegendTextSize"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.TooltipTextPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipTextPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.TooltipBackgroundPaint">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipBackgroundPaint"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.TooltipTextSize">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.TooltipTextSize"/>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.Title">
+            <inheritdoc cref="P:ChartKit.Kernel.Sketches.IChartView`1.Title"/>
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.Measuring">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.Measuring" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.UpdateStarted">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.UpdateStarted" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.UpdateFinished">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.UpdateFinished" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.DataPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView.DataPointerDown" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.ChartPointPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView.ChartPointPointerDown" />
+        </member>
+        <member name="E:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.VisualElementsPointerDown">
+            <inheritdoc cref="E:ChartKit.Kernel.Sketches.IChartView`1.VisualElementsPointerDown"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.ScalePixelsToData(ChartKit.Drawing.LvcPointD,System.Int32,System.Int32)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IPolarChartView`1.ScalePixelsToData(ChartKit.Drawing.LvcPointD,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.ScaleDataToPixels(ChartKit.Drawing.LvcPointD,System.Int32,System.Int32)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IPolarChartView`1.ScaleDataToPixels(ChartKit.Drawing.LvcPointD,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.GetPointsAt(ChartKit.Drawing.LvcPoint,ChartKit.Measure.TooltipFindingStrategy)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartView`1.GetPointsAt(ChartKit.Drawing.LvcPoint,ChartKit.Measure.TooltipFindingStrategy)"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SKCharts.SKPolarChart.GetVisualsAt(ChartKit.Drawing.LvcPoint)">
+            <inheritdoc cref="M:ChartKit.Kernel.Sketches.IChartView`1.GetVisualsAt(ChartKit.Drawing.LvcPoint)"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.SkiaSharpProvider">
+            <inheritdoc cref="T:ChartKit.Kernel.Providers.ChartEngine`1"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SkiaSharpProvider.GetDefaultMapFactory">
+            <inheritdoc cref="M:ChartKit.Kernel.Providers.ChartEngine`1.GetDefaultMapFactory"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SkiaSharpProvider.GetDefaultCartesianAxis">
+            <inheritdoc cref="M:ChartKit.Kernel.Providers.ChartEngine`1.GetDefaultCartesianAxis"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SkiaSharpProvider.GetDefaultPolarAxis">
+            <inheritdoc cref="M:ChartKit.Kernel.Providers.ChartEngine`1.GetDefaultPolarAxis"/>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.SkiaSharpProvider.GetSolidColorPaint(ChartKit.Drawing.LvcColor)">
+            <inheritdoc cref="M:ChartKit.Kernel.Providers.ChartEngine`1.GetSolidColorPaint(ChartKit.Drawing.LvcColor)"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedAreaSeries`1">
+            <summary>
+            Defines a stacked area series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedAreaSeries`2">
+            <summary>
+            Defines a stacked area series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedAreaSeries`3">
+            <summary>
+            Defines a stacked area series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedColumnSeries`1">
+            <summary>
+            Defines a stacked column series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedColumnSeries`2">
+            <summary>
+            Defines a stacked column series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedColumnSeries`3">
+            <summary>
+            Defines a stacked column series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedRowSeries`1">
+            <summary>
+            Defines a stacked row series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedRowSeries`2">
+            <summary>
+            Defines a stacked row series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedRowSeries`3">
+            <summary>
+            Defines a stacked row series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedStepAreaSeries`1">
+            <summary>
+            Defines a stacked area series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedStepAreaSeries`2">
+            <summary>
+            Defines a stacked area series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StackedStepAreaSeries`3">
+            <summary>
+            Defines a stacked area series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StepLineSeries`1">
+            <summary>
+            Defines a stepline series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StepLineSeries`2">
+            <summary>
+            Defines a stepline series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.StepLineSeries`3">
+            <summary>
+            Defines a stepline series in the user interface.
+            </summary>
+            <typeparam name="TModel">
+            The type of the points, you can use any type, the library already knows how to handle the most common numeric types,
+            to use a custom type, you must register the type globally 
+            (<see cref="M:ChartKit.Kernel.ChartKitSettings.HasMap``1(System.Action{``0,ChartKit.Kernel.ChartPoint})"/>)
+            or at the series level 
+            (<see cref="P:ChartKit.Series`4.Mapping"/>).
+            </typeparam>
+            <typeparam name="TVisual">
+            The type of the geometry of every point of the series.
+            </typeparam>
+            <typeparam name="TLabel">
+            The type of the data label of every point.
+            </typeparam>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.ThemesExtensions">
+            <summary>
+            Defines the light theme extensions.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.ThemesExtensions.AddLightTheme(ChartKit.Kernel.ChartKitSettings,System.Action{ChartKit.Themes.Theme{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext}})">
+            <summary>
+            Adds the light theme.
+            </summary>
+            <param name="settings">The settings.</param>
+            <param name="additionalStyles">the additional styles.</param>
+            <returns>The current LiveCharts settings.</returns>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.ThemesExtensions.AddDarkTheme(ChartKit.Kernel.ChartKitSettings,System.Action{ChartKit.Themes.Theme{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext}})">
+            <summary>
+            Adds the dark theme.
+            </summary>
+            <param name="settings">The settings.</param>
+            <param name="additionalStyles">The additional styles.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.TimeSpanAxis">
+            <summary>
+            Defines a TimeSpan axis.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.TimeSpanAxis.#ctor(System.TimeSpan,System.Func{System.TimeSpan,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ChartKit.SkiaSharpView.DateTimeAxis"/> class.
+            </summary>
+            <param name="unit">The unit of the axis (hours, days, months, years).</param>
+            <param name="formatter">The labels formatter.</param>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.VisualElements.AngularTicksVisual">
+            <summary>
+            Defines the angulaar ticks visual.
+            </summary>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.VisualElements.BaseGeometryVisual">
+            <inheritdoc cref="T:ChartKit.VisualElements.BaseGeometryVisual`1"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.VisualElements.GeometryVisual`1">
+            <inheritdoc cref="T:ChartKit.VisualElements.GeometryVisual`3"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.VisualElements.LabelVisual">
+            <inheritdoc cref="T:ChartKit.VisualElements.LabelVisual`2"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.VisualElements.NeedleVisual">
+            <inheritdoc cref="T:ChartKit.VisualElements.NeedleVisual`3"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.VisualElements.SVGVisual">
+            <summary>
+            Defines a visual element in a chart that draws a svg geometry in the user interface.
+            </summary>
+        </member>
+        <member name="P:ChartKit.SkiaSharpView.VisualElements.SVGVisual.Path">
+            <summary>
+            Gets or sets the SVG path.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.VisualElements.SVGVisual.OnInvalidated(ChartKit.Chart{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext})">
+            <inheritdoc cref="M:ChartKit.VisualElements.VisualElement`1.OnInvalidated(ChartKit.Chart{`0})"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.VisualElements.VariableGeometryVisual">
+            <inheritdoc cref="T:ChartKit.VisualElements.VariableGeometryVisual`1"/>
+        </member>
+        <member name="T:ChartKit.SkiaSharpView.VisualElements.VisualElementsExtensions">
+            <summary>
+            Defines the visual elements extensions class.
+            </summary>
+        </member>
+        <member name="M:ChartKit.SkiaSharpView.VisualElements.VisualElementsExtensions.AsDrawnControl(ChartKit.Kernel.Drawing.Sketch{ChartKit.SkiaSharpView.Drawing.SkiaSharpDrawingContext},System.Int32)">
+            <summary>
+            Creates a relative panel control from a given sketch.
+            </summary>
+        </member>
+    </members>
+</doc>
